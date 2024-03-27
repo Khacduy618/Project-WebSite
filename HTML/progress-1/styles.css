@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1000px;
+    height: auto;
+    margin: 50px auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.main-content form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dashed black;
+}
+.left-cont,.right-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.img-file{
+    height: 300px;
+    width: 50%;
+    margin: 0 auto;
+}
+.img-file:hover > .img{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.img{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 20px auto;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.img img{
+    padding: 5px;
+    border: 1px solid black;
+}
+.font,.back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 10px 10px rgb(125, 125, 125);
+}
+.img:hover img{
+    transform: scale(1.1);
+}
+a img{
+    box-shadow: none;
+}
+.upload{
+    width: 35%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.upload:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    background-color: blue;
+}
+.input-file{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+.link-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.link-media a{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+    margin: 20px 20px 0px 20px;
+}
+.first-name, .middle-name, .last-name{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.input-text{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(118, 90, 90);
+}
+.input-text:focus{
+    border: 1px solid blue;
+}
+.gender{
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+}
+input[type="radio"].toggle{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    margin: 5px;
+}
+input[type="radio"].toggle + label{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"].toggle + label::before{
+    content: "";
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    background-color:antiquewhite;
+    margin-right: 0.25em;
+}
+input[type="radio"].toggle + label::after{
+    content: "";
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 1em;
+    background-color: rgb(151, 147, 142);
+    position: absolute;
+    top: 0.05em;
+    left: 0.1em;
+}
+input[type="radio"].toggle:focus + label::before{
+    outline: 1px solid black;
+}
+input[type="radio"].toggle:checked + label::before{
+    background-color: rgb(155, 246, 144);
+}
+input[type="radio"].toggle:checked + label::after{
+    background-color: rgb(5, 196, 31);
+    transform: translate(100%);
+    top: .05em;
+}
+.class-name{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+select{
+    padding: 5px 10px 5px 10px;
+    border-radius: 1em;
+    margin-left: 5px;
+}
+.introduce{
+    display: flex;
+    margin: 10px 0 10px 20px;
+}
+textarea{
+    margin: 10px;
+}
+.buttons{
+    width: 40%;
+    margin: 20px 0 20px 20px;
+}
+.buttons input{
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 1em;
+    border-color: black;
+    border: 1px solid black;
+    box-shadow: 6px 8px 5px rgb(74, 74, 74);
+    transition: all 0.3s ease-in-out;
+}
+.buttons input:hover{
+    background-color: blue;
+    box-shadow: 6px 8px 15px rgb(74, 74, 74);
+    transform: scale(1.1);
+}
+.video{
+    display: flex;
+    width: 600px;
+    height: 340px;
+    margin: 20px auto;
+}
+a:hover img{
+    transform: scale(1.2);
+}

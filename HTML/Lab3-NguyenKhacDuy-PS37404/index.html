@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab3</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="">
+            <div class="title">
+                <a href="">Add Child</a>
+            </div>
+            <div class="info">
+                <div class="avt">
+                    <div class="img-person" for="avt">
+                        <img src="img/9d7e29c07878a86bfff8ad0437868d18.jpg" alt="ảnh đại diện">
+                    </div>
+                    
+                    <div class="button">
+                        <input type="file" name="avt" id="avt" class="inputfile" />
+                        <label for="avt">UPLOAD YOUR CHILD'S PICTURE</label>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="personal">
+                        <div class="name">
+                            <label>NAME OF THE CHILD</label>
+                            <div class="inputname">
+                                <input type="text" id="fname" name="firstname" placeholder="First name">
+                                <input type="text" id="mname" name="midname" placeholder="Mid name">
+                                <input type="text" id="lname" name="lastname" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="gender">
+                            <label>GENDER</label>
+                            <div class="inputCheck  ">
+                                <input type="radio" id="girl" name="gender" value="Girl">
+                                <label for="girl">Girl</label>  
+                                <input type="radio" id="boy" name="gender" value="Boy">
+                                <label for="boy">Boy</label>
+                            </div>
+                        </div>
+                        <div class="birth">
+                            <label for="birthday">DATE OF BIRTH</label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                    </div>
+                    <div class="school">
+                        <div class="nameSchool">
+                            <Label>YOUR CHILD'S SCHOOL</Label>
+                            <div class="infoS">
+                            <input type="text" class="nameSchool" id="nameS" placeholder="Enter your child's school">
+                            <input type="submit" name="click" id="Clickhere" class="Clickhere">
+                            <label for="Clickhere">Click here if your school is not currently on Payschool</label>
+                            </div>
+                        </div>
+                        <div class="yearIn">
+                            <Label>CHILD'S SCHOOL YEAR</Label>
+                            <div class="custom-select" style="width:92%;">
+                                <select>
+                                  <option value="0">Select child's school year</option>
+                                  <option value="1">2022-2023</option>
+                                  <option value="2">2023-2024</option>
+                                  <option value="3">2024-2025</option>
+                                  <option value="4">2025-2026</option>
+                                  <option value="5">2026-2027</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="class">
+                            <label>CLASS NAME</label>
+                            <div class="custom-select" style="width:92%;">
+                                <select>
+                                  <option value="0">Select child's class name</option>
+                                  <option value="1">10/1</option>
+                                  <option value="2">10/2</option>
+                                  <option value="3">10/3</option>
+                                  <option value="4">11/1</option>
+                                  <option value="5">11/2</option>
+                                  <option value="6">11/3</option>
+                                  <option value="7">12/1</option>
+                                  <option value="8">12/2</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <div class="foodNote">
+                            <label>IS YOUR CHILD ALLERGIC TO ANYFOOD? PLEASE PROVIDE DETAILS</label>
+                            <div class="inputBoxx">
+                                <div class="inputCheck">
+                                    <input type="radio" id="Yes" name="foodNote" value="Yes">
+                                    <label for="Yes">Yes</label>
+                                    <input type="radio" id="No" name="foodNote" value="No">
+                                    <label for="No">No</label>
+                                </div>
+                            </div>
+                            <textarea name="mota" id="mota" cols="64" rows="10"></textarea>
+                        </div>
+                        <div class="medicalNote">
+                            <label>MEDICAL HISTORY? PLEASE PROVIDE DEATAILS</label>
+                            <textarea name="mota" id="mota" cols="64" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="confirmInfo">
+                        <input type="checkbox" id="confirm" class="checkbox">
+                        <span for="confirm">I Agree that the above information is true to my knowledge and I give my Consent to use this information for school gurpose</span>
+                    </div>
+                    <div class="submitbox">
+                        <input type="submit" class="submit" value="Submit">
+                        <input type="submit" name="subandadd" id="subandadd" value="Submit and add another child">
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

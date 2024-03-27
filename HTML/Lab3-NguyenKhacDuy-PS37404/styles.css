@@ -1,0 +1,222 @@
+body{
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0 0;
+    padding: initial;
+    border: initial;
+}
+form{
+    width: 100%;
+    margin: 3% 0 3% 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.avt{
+    width: 20%;
+}
+.img-person{
+    width: 100%;
+}
+.img-person img{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    object-fit: cover;
+    border: 2px solid #5f4b4b;
+}
+.inputfile{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.button{
+    display: flex;
+    margin: 0px auto;
+}
+.inputfile + label {
+    margin: 3% auto;
+    font-size: x-small;
+    font-weight: bold;
+    color: #776d61;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: rgb(254, 197, 197);
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 2%;
+}
+
+.personal{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgb(87, 84, 84);
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputname{
+    display: inline-block;
+}
+.name input{
+    margin: 1% 4% 0 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+}
+.gender{
+    width: 30%;
+    margin: 4% 2% 0 0;
+}
+.inputCheck{
+    margin: 3% 4% 4% 0;
+    display: flex;
+    align-items: center;
+}
+.inputCheck label{
+    margin-right: 10%;
+}
+.birth{
+    margin: 4% 2% 0 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.birth input{
+    margin: 3% 4% 0 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+.school{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    border-bottom: 3px solid rgb(87, 84, 84);
+}
+.nameSchool{
+    width: 100%;
+    margin-bottom: 2%;
+}
+#nameS{
+    width: 57%;
+    margin-right: 2%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.Clickhere{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.Clickhere + label {
+    margin: 3% auto;
+    font-size: x-small;
+    font-weight: bold;
+    color: #776d61;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Clickhere:focus + label,
+.Clickhere + label:hover {
+    background-color: rgb(254, 197, 197);
+}
+.custom-select select{
+    margin: 3% 2% 0 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+  }
+.yearIn {
+    width: 30%;
+    margin-right: 2%;
+}
+.class {
+    width: 30%;
+    margin-right: 2%;
+}
+.note{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.inputBoxx{
+    width: 30%;
+    margin-right: 2%;
+}
+.submitbox{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 47px;
+    text-decoration: none;
+    margin: 12px 2px;
+    cursor: pointer;
+    width: 100%;
+  }

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>LAB4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="our">
+            <div class="background">
+                <span></span>
+            </div>
+            <div class="main-content">
+                <div class="header">
+                    <div class="left-header">
+                        <div class="title">Projects</div>
+                    </div>
+                    <div class="right-header">
+                        <form action="" class="form-search fix">
+                            <div class="search">
+                                <div class="icon-search"><i class="fa-solid fa-magnifying-glass" for="search"></i></div>
+                                <input class="input-text" type="text" id="search" placeholder="Search">
+                            </div>
+                        </form>
+                        <div class="notify fix">
+                            <div class="notify icons"><a href=""><i class="fa-regular fa-bell"></i></a></div>
+                        </div>
+                        <div class="home fix">
+                            <div class="home icons"><a href=""><i class="fa-solid fa-house-chimney"></i></a></div>
+                        </div>
+                        <div class="user fix">
+                            <div class="avatar">
+                                <img src="img/avt.jpg" alt="avatar">
+                            </div>
+                            <a class="username" href="#">Nguyễn Khắc Duy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="content">
+                        <form action="">
+                            <div class="buttons">
+                                <div class="in">
+                                    <div class="addnew">
+                                        <input type="button" id="add-new" class="button-add">
+                                        <label for="add-new"><i class="fa-solid fa-circle-plus icons" style="color: #339ec1;" ></i>Add new project</label>
+                                    </div>
+                                </div>
+                                <div class="out">
+                                    <div class="export">
+                                        <input type="button" id="export" class="button-add">
+                                        <label for="export"><i class="fa-solid fa-file-export icons"></i>Export</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="mid">
+                            <div class="left-mid">
+                                <div class="total border">Total projects : 12</div>
+                                <div class="running border">Running projects : 4</div>
+                                <div class="completed border">Completed : 4</div>
+                            </div>
+                            <div class="right-mid">
+                                <form action="" class="search-table-primary">
+                                    <div class="search-table">
+                                        <div class="icon-search"><i class="fa-solid fa-magnifying-glass icons" for="search"></i></div>
+                                        <input class="input-searchtable" type="text" id="search" placeholder="Search table">
+                                    </div>
+                                </form>
+                                <div class="filter">
+                                    <div class="ft">
+                                        <div class="filter-primary">
+                                            <i class="fa-solid fa-filter icons"></i>
+                                            <span>Filter</span>
+                                            <i class="fa-solid fa-sort-down icons"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ft">
+                                        <div class="clear-filter">
+                                            <span>Clear filter</span>
+                                            <i class="fa-solid fa-sort-down icons"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="table">
+                            <form action="">
+                                <table style="width: 100%;">
+                                    <thead>
+                                    <tr>
+                                    <th>
+                                        <div class="checkbox-wrapper-23">
+                                            <input type="checkbox" id="check-1" NAME="CHECK"/>
+                                            <label for="check-1" style="--size: 18px">
+                                                <svg viewBox="0,0,50,50">
+                                                    <path d="M5 30 L 20 45 L 45 5"></path>
+                                                </svg>
+                                            </label>
+                                    </div>
+                                    </th>
+                                    <th>PROJECT NAME</th>
+                                    <th class="filter-s">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i>
+                                            <ul class="sub-menu">
+                                                <li>Sort Ascending</li>
+                                                <li>Sort Decending</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </th>
+                                    <th>STATUS</th>
+                                    <th class="filter-s">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i>
+                                            <ul class="sub-menu">
+                                                <li>Sort Ascending</li>
+                                                <li>Sort Decending</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </th>
+                                    <th>START DATE</th>
+                                    <th class="filter-s">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i>
+                                            <ul class="sub-menu">
+                                                <li>Sort ascending</li>
+                                                <li>Sort decending</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </th>
+                                    <th>END DATE</th>
+                                    <th class="filter-s">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i>
+                                            <ul class="sub-menu">
+                                                <li>Sort ascending</li>
+                                                <li>Sort decending</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </th>
+                                    <th>LAST UPDATE ON</th>
+                                    <th class="filter-s">
+                                        <ul class="main-menu">
+                                            <li>
+                                                <i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i>
+                                            <ul class="sub-menu">
+                                                <li>Sort ascending</li>
+                                                <li>Sort decending</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </th>
+                                    <th>TASKS</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-2" NAME="CHECK"/>
+                                                <label for="check-2" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Android task moitoring</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="status ongoing">
+                                                <i class="fa-solid fa-circle ongoing"></i>
+                                                <Span>On going</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>05 Jan, 2022</td>
+                                        <td></td>
+                                        <td>05 Apr, 2022</td>
+                                        <td></td>
+                                        <td>05 Apr, 2022</td>
+                                        <td></td>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-3" name="check"/>
+                                                <label for="check-3" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Chatbots</td>
+                                        <TD></TD>
+                                        <td>
+                                            <div class="status ongoing">
+                                                <i class="fa-solid fa-circle ongoing"></i>
+                                                <Span>On going</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>15 Apr, 2022</td>
+                                        <td></td>
+                                        <td>05 Jul, 2022</td>
+                                        <td></td>
+                                        <td>05 Jul, 2022</td>
+                                        <TD></TD>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-4" NAME="CHECK"/>
+                                                <label for="check-4" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Data leakage detection system</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="status completed">
+                                                <i class="fa-solid fa-circle completed"></i>
+                                                <Span>Completed</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>30 May, 2022</td>
+                                        <td></td>
+                                        <td>30 Aug, 2022</td>
+                                        <td></td>
+                                        <td>30 Aug, 2022</td>
+                                        <td></td>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-5" NAME="CHECK"/>
+                                                <label for="check-5" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>Android Patient Tracker</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="status completed">
+                                                <i class="fa-solid fa-circle completed"></i>
+                                                <Span>Completed</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>13 Jun, 2022</td>
+                                        <td></td>
+                                        <td>13 Sept, 2022</td>
+                                        <td></td>
+                                        <td>13 Sept, 2022</td>
+                                        <TD></TD>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-6" NAME="CHECK"/>
+                                                <label for="check-6" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Bug tracker</td>
+                                        <TD></TD>
+                                        <td>
+                                            <div class="status overdue">
+                                                    <i class="fa-solid fa-circle overdue"></i>
+                                                    <Span>Overdue</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>5 Sept, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <TD></TD>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-7" NAME="CHECK"/>
+                                                <label for="check-7" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Camera motion sensor system</td>
+                                        <TD></TD>
+                                        <td>
+                                            <div class="status onhold">
+                                                    <i class="fa-solid fa-circle onhold"></i>
+                                                    <Span>On Hold</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>5 Sept, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <TD></TD>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-wrapper-23">
+                                                <input type="checkbox" id="check-8" NAME="CHECK"/>
+                                                <label for="check-8" style="--size: 18px">
+                                                    <svg viewBox="0,0,50,50">
+                                                        <path d="M5 30 L 20 45 L 45 5"></path>
+                                                    </svg>
+                                                </label>
+                                        </div>
+                                        </td>
+                                        <td>Microsoft_UX_Design</td>
+                                        <TD></TD>
+                                        <td>
+                                            <div class="status notstarted">
+                                                    <i class="fa-solid fa-circle notstarted"></i>
+                                                    <Span>Not started</Span>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>5 Sept, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <td></td>
+                                        <td>5 Dec, 2022</td>
+                                        <TD></TD>
+                                        <td><a href="">See task details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="Showmore" colspan="12"><a href=""><span>Show more</span></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video width="500px" height="300px" controls autoplay loop>
+            <source src="video/nhung-loi-hua-bo-quen-vu-x-dear-jane-official-mv.mp4">
+        </video>
+    </div>
+</body>
+</html>

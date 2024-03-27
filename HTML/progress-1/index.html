@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <form action="">
+                <div class="left-cont">
+                    <div class="img-file">
+                        <div class="img">
+                            <div class="font">
+                                <img src="img/avt.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="img/9d7e29c07878a86bfff8ad0437868d18.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload">
+                        <input type="text" id="uploadfile" class="input-file">
+                        <label for="uploadfile">Upload your picture</label>
+                    </div>
+                    <div class="link-media">
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                        <a href=""><img src="img/instagram.png" alt=""></a>
+                        <a href=""><img src="img/telegram.png" alt=""></a>
+                        <a href=""><img src="img/tik-tok.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="right-cont">
+                    <div class="info">
+                        <div class="name">
+                            <div class="first-name">
+                                <label for="firstname">First name:</label>
+                                <input type="text" id="firstname" class="input-text">
+                            </div>
+                            <div class="middle-name">
+                                <label for="middlename">Middle name:</label>
+                                <input type="text" id="middlename" class="input-text">
+                            </div>
+                            <div class="last-name">
+                                <label for="lastname">Last name:</label>
+                                <input type="text" id="lastname" class="input-text">
+                            </div>
+                        </div>
+                        <div class="gender">
+                            <span>Gender:</span>
+                            <input type="radio" id="men" name="gender" class="toggle">
+                            <label for="men">Men</label>
+                            <input type="radio" id="women" name="gender" class="toggle">
+                            <label for="women">Women</label>
+                        </div>
+                        <div class="class-name">
+                            <label for="class">Class:</label>
+                            <select name="class-name" id="class">
+                                <option value="0">---</option>
+                                <option value="1">WEB1011</option>
+                                <option value="2">WEB1012</option>
+                                <option value="3">WEB1013</option>
+                            </select>
+                        </div>
+                        <div class="introduce">
+                            <label for="introduce-myself">Introduce-myself:</label>
+                            <textarea name="intro-myself" id="introduce-myself" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Update" class="update" id="update">
+                        <input type="button" value="Clear" class="clear" id="clear">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="video">
+            <video controls autoplay loop>
+                <source src="video/nhung-loi-hua-bo-quen-vu-x-dear-jane-official-mv.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>

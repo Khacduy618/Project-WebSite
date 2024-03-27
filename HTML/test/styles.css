@@ -1,0 +1,211 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+}
+.main{
+    height: 80vh;
+    display: block;
+    margin-top: 30px;
+    background-color:aqua;
+}
+.main form{
+    display: flex;
+    flex-direction: row;
+}
+.left-upload-img{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.img-upload{
+    width: 50%;
+    height: 68%;
+    margin: 50px auto;
+}
+.img-upload:hover > .img{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.img{
+    width: 100%;
+    height: 45vh;
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+    margin: 0px auto;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.font,.back{
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 5px 5px 1px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px #8fabc4;
+}
+.back{
+    transform: rotateY(180deg);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.img:hover img{
+    transform: scale(1.1);
+}
+.upload-file{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+.input-file{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.input-file + label{
+    cursor: pointer;
+}
+.input-file:focus + label,
+.input-file + label:hover {
+    background-color: rgb(254, 197, 197);
+}
+.link-media{
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+a {
+    padding: 0px;
+    margin: 0 20px 0 0 ;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+.right-input-info-update-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.info-person{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.name{
+    display: grid;
+    grid-template-columns: 100px 210px;
+    align-items: baseline;
+}
+.name input{
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+}
+.gender span{
+    margin-bottom: 20px;
+}
+.class, .buttons{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+input[type="radio"].toggle{
+    opacity: 0;
+}
+input[type="radio"].toggle + label{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"].toggle + label::before{
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: #ddd;
+    border-radius: 1em;
+    margin-right: 0.25em;
+}
+input[type="radio"].toggle + label::after{
+    content: "";
+    width: .9em;
+    height: .9em;
+    background-color: #7753fd;
+    border-radius: 1em;
+    position: absolute;
+    left: .1em;
+    top: .05em;
+}
+input[type="radio"].toggle:focus + label::before{
+    outline: 1px solid black;
+}
+input[type="radio"].toggle:checked + label::before{
+    background-color: #dbfec1;
+}
+input[type="radio"].toggle:checked + label::after{
+    background-color: #67e109;
+    transform: translateX(100%);
+    top: .05em;
+}
+input[type="radio"].toggle:checked + label{
+    color: red
+}
+select{
+    padding: 5px;
+    border-radius: 1em;
+}
+.introduce{
+    display: flex;
+    margin-bottom: 20px;
+}
+textarea{
+    margin-left: 5px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+.update, .clear{
+    margin: 10px;
+}
+.update input[type="submit" i], .clear button {
+    padding: 5px 10px 5px 10px;
+    background-color: burlywood;
+    border-radius: 1em;
+}
+.buttons-child{
+    box-shadow: 5px 8px 5px rgb(253, 124, 124)
+}
+.video{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

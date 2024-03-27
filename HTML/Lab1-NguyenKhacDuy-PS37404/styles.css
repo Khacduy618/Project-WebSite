@@ -1,0 +1,80 @@
+body{
+    background-image: url(../img/bg.jpg);
+}
+#container{
+    width: 500px;
+    background: #ffffff;
+    min-height: 100%;
+    margin: 50px auto;
+    border-radius: 15px;
+}
+.box-parent{
+    background: #ffffff;
+    max-width: 100%;
+    height: 900px;
+    margin: 0px auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px blanchedalmond;
+}
+.img{
+    max-width: 100%;
+    min-height: 40%;
+    border-radius: 15px 15px 0 0;
+}
+.info{
+    max-width: 100%;
+    min-height: 40%;
+    padding: 25px 50px 50px 50px;
+}
+button{
+    box-shadow: 10px 10px 5px rgb(238, 213, 182);
+    font-size: 14px;
+    border-radius: 9999px;
+    display: inline-block;
+    line-height: 1;
+    min-width: 100px;
+    text-align: center;
+    padding: 17px 10px 16px;
+    margin: 7px 30px 0 0;
+    background-color: #ffffff;
+}
+button:hover {
+    box-shadow: none;
+    background-color: rgb(253, 180, 180);
+}
+.row{
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding: 0px;
+    margin: 0 20px 0 0 ;
+    border: 1px solid black;
+    overflow: hidden; /* Giúp ảnh k vượt ra khỏi a */
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+img {
+    display: block; /* Để có thể sử dụng margin*/
+    margin: 13px auto;
+    max-width: 50%;
+    text-align: center;
+}
+.title{
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(180, 180, 180);
+}
+.name{
+    font-weight: 500px;
+    color: rgb(44, 44, 44);
+}
+h1,h4{
+    font-family:Verdana, sans-serif;
+}
