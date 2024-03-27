@@ -1,0 +1,5 @@
+<Files database.php>
+    RewriteEngine On
+    Order deny,allow
+    Deny from all
+</Files>

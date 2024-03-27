@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #fefefe;
+}
+.signin-container{
+    width: 50%;
+    margin: 77px auto;
+}
+.signin-container .form-row{
+    margin-bottom: 13px;
+}
+.signin-container .form-row label{
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin: 0 0 3px;
+}
+.signin-container .form-row input{
+    padding: 10px 10px 9px;
+    width: 100%;
+}
+.signin-container .form-row .btn-submit{
+    min-width: 132px;
+    max-width: 50px;
+    margin-top: 7px;
+}
+.signin-container .form-row .link-to-help{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.signin-container .form-row .link-to-help:hover{
+    color: #444444;
+}
+.signup-container{
+    margin-top: 77px;
+}
+.signup-container .form-row{
+    margin-bottom: 13px;
+}
+.signup-container .form-row label{
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin: 0 0 3px;
+}
+.signup-container .form-row input{
+    padding: 10px 10px 9px;
+    width: 300px;
+}
+.signup-container .form-row .btn-submit{
+    min-width: 132px;
+    max-width: 50px;
+    margin-top: 7px;
+}
+.signup-container .form-row .link-to-help{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.signup-container .form-row .link-to-help:hover{
+    color: #444444;
+}
+.btn.btn-bold{
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 9999px;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px;
+    background-color: blue;
+}
+.btn.btn-bold:hover{
+    background-color: #444444;
+    color: white;
+}
+.signup-container{
+    width: 50%;
+    margin: 77px auto;
+}
+.signup-container .form-row{
+    margin-bottom: 13px;
+}
+.signup-container .form-row label{
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin: 0 0 3px;
+}
+.signup-container .form-row input{
+    padding: 10px 10px 9px;
+    width: 100%;
+}
+.signup-container .form-row .btn-submit{
+    min-width: 132px;
+    max-width: 50px;
+    margin-top: 7px;
+}
+.signup-container .form-row .link-to-help{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.signup-container .form-row .link-to-help:hover{
+    color: #444444;
+}

@@ -1,0 +1,1 @@
+`dycakehouse`.`chitietdonhang`, CONSTRAINT `lk_donhang_chitietdonhang` FOREIGN KEY (`id_dh`) REFERENCES `donhang` (`id`) ON DELETE CASCADE ON UPDATE CASCADE

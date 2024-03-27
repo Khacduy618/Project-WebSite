@@ -1,0 +1,2 @@
+2023-11-27 20:50:54 0x3408  Cannot drop table `datan`.`order`
+because it is referenced by `datan`.`order_detail`

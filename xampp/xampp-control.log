@@ -1,0 +1,44 @@
+10:02:49 SA  [main] 	Initializing Control Panel
+10:02:49 SA  [main] 	Windows Version:  Enterprise  64-bit
+10:02:49 SA  [main] 	XAMPP Version: 8.0.28
+10:02:49 SA  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+10:02:49 SA  [main] 	You are not running with administrator rights! This will work for
+10:02:49 SA  [main] 	most application stuff but whenever you do something with services
+10:02:49 SA  [main] 	there will be a security dialogue or things will break! So think 
+10:02:49 SA  [main] 	about running this application with administrator rights!
+10:02:49 SA  [main] 	XAMPP Installation Directory: "c:\xampp\"
+10:02:49 SA  [main] 	Checking for prerequisites
+10:03:06 SA  [main] 	All prerequisites found
+10:03:06 SA  [main] 	Initializing Modules
+10:03:06 SA  [Apache] 	XAMPP Apache Service is already running on port 80
+10:03:06 SA  [Apache] 	XAMPP Apache Service is already running on port 443
+10:03:06 SA  [mysql] 	XAMPP MySQL Service is already running on port 3306
+10:03:06 SA  [filezilla] 	XAMPP FileZilla Service is already running on port 21
+10:03:06 SA  [filezilla] 	XAMPP FileZilla Service is already running on port 14147
+10:03:06 SA  [main] 	Starting Check-Timer
+10:03:06 SA  [main] 	Control Panel Ready
+10:03:10 SA  [filezilla] 	Attempting to stop FileZilla service...
+10:03:15 SA  [filezilla] 	Status change detected: stopped
+10:04:22 SA  [main] 	Deinitializing Modules
+10:04:22 SA  [main] 	Deinitializing Control Panel
+
+10:56:46 SA  [main] 	Initializing Control Panel
+10:56:46 SA  [main] 	Windows Version:  Enterprise  64-bit
+10:56:46 SA  [main] 	XAMPP Version: 8.0.28
+10:56:46 SA  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+10:56:46 SA  [main] 	You are not running with administrator rights! This will work for
+10:56:46 SA  [main] 	most application stuff but whenever you do something with services
+10:56:46 SA  [main] 	there will be a security dialogue or things will break! So think 
+10:56:46 SA  [main] 	about running this application with administrator rights!
+10:56:46 SA  [main] 	XAMPP Installation Directory: "c:\xampp\"
+10:56:46 SA  [main] 	Checking for prerequisites
+10:56:48 SA  [main] 	All prerequisites found
+10:56:48 SA  [main] 	Initializing Modules
+10:56:48 SA  [Apache] 	XAMPP Apache Service is already running on port 80
+10:56:48 SA  [Apache] 	XAMPP Apache Service is already running on port 443
+10:56:48 SA  [mysql] 	XAMPP MySQL Service is already running on port 3306
+10:56:48 SA  [main] 	Starting Check-Timer
+10:56:48 SA  [main] 	Control Panel Ready
+11:04:05 SA  [main] 	Deinitializing Modules
+11:04:05 SA  [main] 	Deinitializing Control Panel
+

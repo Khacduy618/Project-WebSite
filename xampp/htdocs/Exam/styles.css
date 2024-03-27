@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1000px;
+    height: auto;
+    border: 1px solid #a9a9a9;
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 5px rgb(86, 86, 86);
+    margin: 50px auto;
+}
+.main-content form{
+    width: 900px;
+    height: auto;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.left-cont{
+    width: 30%;
+}
+.right-cont{
+    width: 70%;
+}
+.left-cont,.right-cont{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.img-file:hover > .img{
+    transform: rotateY(180deg);
+}
+.img-file{
+    width: 70%;
+    height: 200px;
+    display: flex;
+}
+.img{
+    width: 100%;
+    display: flex;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.img img{
+    padding: 5px;
+    border: 1px solid black;
+}
+.font,.back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.upload{
+    display: flex;
+    position: relative;
+    width: 50%;
+    background-color: aliceblue;
+    margin-left: 20px;
+    border-radius: 1em;
+}
+.input-file{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+.input-file +label {
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.title span{
+    font-size: 25px;
+}
+.title h4{
+    font-weight: 500;
+    font-size: 15px;
+}
+.icon{
+    width: 100px;
+    display: flex;
+    margin: 7px 0 7px 0;
+}
+.icon a{
+    width: 15px;
+    margin: 5px 15px 5px 0;
+}
+.gender{
+    display: flex;
+    flex-direction: column;
+}
+.gd{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+input[type="radio"].toggle{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+input[type="radio"].toggle + label{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"].toggle + label::before{
+    content: "";
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    background-color: rgb(172, 172, 172);
+    margin-right: 0.5em;
+}
+input[type="radio"].toggle + label::after{
+    content: "";
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 1em;
+    background-color: rgb(144, 144, 144);
+    top: 0.05em;
+    left: 0.1em;
+    position: absolute;
+}
+input[type="radio"].toggle:checked + label::before{
+    outline: 1px solid black;
+}
+input[type="radio"].toggle:checked + label::before{
+    background-color: greenyellow;
+}
+input[type="radio"].toggle:checked + label::after{
+    transform: translate(100%);
+    background-color: forestgreen;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 10px;
+    gap: 0 30px;
+}
+.email, .phone, .address{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 0;
+    gap: 5px;
+}
+.input-text{
+    padding: 5px 10px 5px 10px;
+    border-radius: 0.5em;
+    border: 1px solid rgb(108, 108, 108);
+}
+.contact > .address{
+    grid-column: 1 / span 2;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 200px;
+}
+select{
+    padding: 5px 10px 5px 10px;
+    border-radius: 0.5em;
+    margin-top: 5px;
+}
+
+.introduces{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    margin: 5px 0 20px 0;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+}
+
+video{
+    margin-top: 5px;
+    border-radius: 0.5em;
+    border: 1px solid rgb(40, 40, 40);
+}
