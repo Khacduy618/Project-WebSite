@@ -1,0 +1,13 @@
+.btn{
+    background-color: rgb(246, 124, 53) !important;
+}
+.btn:hover{
+    background-color: rgb(248, 198, 73);
+}
+.btn{
+    display: flex !important;
+    margin: 0 auto !important;
+}
+body{
+    background-color: #fef5f5 !important;
+}

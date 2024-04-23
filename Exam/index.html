@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Đăng ký nhập học</title>
+</head>
+
+<body>
+    <div class="container mt-5 w-50 bg-white rounded pb-4">
+        <h1 class="text-center p-3">Đăng ký nhập học</h1>
+        <form action="" class="was-validated p-4 mt-2 " id="diemTrungBinhForm">
+            <div class="mb-3 mt-3 ">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" name="name" id="name" class="form-control" value="" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input type="text" name="phone" id="phone" class="form-control" required>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <h6 class="form-label">Cách thức xét tuyển: </h6>
+                <div class="hopchon d-flex">
+                    <div class="xettuyen mt-2">
+                        <label for="hocba">Xét học bạ</label>
+                        <input type="radio" onclick="tinhdiemTB()" name="xettuyen" required>
+                    </div>
+                    <div class="dangky m-3 mt-2">
+                        <label for="dangky">Đăng ký dự thi</label>
+                        <input type="radio" name="xettuyen" onclick="dangkyduthi()" id="dangky" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 mt-3" id="xethocba" style="display: none;">
+                <form action="">
+                    <label class="form-label" id="tinhdiem">Tính điểm trung bình</label>
+                    <input type="text" name="toan" id="toan" class="form-control" placeholder="Nhập điểm môn Toán"
+                        value="" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <input type="text" name="toan" id="van" class="form-control mt-2" value=""
+                        placeholder="Nhập điểm môn Văn" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <input type="text" name="toan" id="anh" class="form-control mt-2" value=""
+                        placeholder="Nhập điểm môn Anh" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </form>
+            </div>
+            <div class="button">
+                <input type="submit" onclick="submit()" class="btn btn-pro" value="Gửi!">
+            </div>
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

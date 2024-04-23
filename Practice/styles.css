@@ -1,0 +1,18 @@
+button{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+table tr th{
+    text-align: center;
+}
+table tr td{
+    text-align: center;
+}
+.bg-1{
+    background-color: rgb(237, 218, 9) ;
+}
+.btn:hover{
+    background-color: rgb(237, 218, 9) ;
+    border: 1px solid rgb(237, 218, 9) ;
+    color: black;
+}

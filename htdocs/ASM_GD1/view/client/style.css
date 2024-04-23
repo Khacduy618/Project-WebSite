@@ -1,0 +1,506 @@
+/* header */
+body {
+  margin: 0;
+  background-color: rgba(247, 247, 229, 0.593);
+  overflow:auto;
+}
+.header {
+  padding: 5px;
+  /* border: 1px solid black; */
+  background-color: #e7c06e;
+  padding-bottom: 15px;
+} 
+.header div {
+  display: inline;
+  margin: 10px;
+  /* border: 1px solid black; */
+}
+.vien-1 {
+  width: 100px;
+  height: 100px;
+  font-size: 35px;
+  font-weight: 5000;
+  color: aliceblue;
+}
+
+.vien-2 {
+  background-color:  #8A6C1C;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  padding: 7px;
+  /* margin-bottom: 10px; */
+}
+.chi-nhanh:hover, .chi-nhanh:focus {
+ outline: none; 
+}
+.vien-2 .chi-nhanh {
+  font-size: 15px;
+  color: white;
+  background-color: #8A6C1C;
+}
+.vien-2 .chi-nhanh-1 {
+  background-color: #8A6C1C;
+  border-right: 2px solid white;
+  font-size: 12px;
+  color: white;
+}
+
+.vien-3 form {
+  display: inline;
+}
+.seach {
+  width: 250px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.submit {
+  width: 50px;
+  height: 34px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+.seach:focus {
+  outline: none;
+}
+.submit:hover {
+  background-color: rgb(135, 224, 142);
+}
+
+.vien-4 {
+  /* border: 1px solid black; */
+  padding: 10px;
+  padding-inline: 20px;
+  position: relative;
+  display: inline-block;
+  padding-top: 6px;
+  padding-inline: 30px;
+  background-color: #8A6C1C;
+  border-radius: 5px;
+}
+.vien-4 .login {
+  /* border: 1px solid rgb(228, 73, 73); */
+  transform: translateY(-40%);
+}
+.vien-4 .login-1 {
+  width: 60px;
+  font-size: 12px;
+  /* border: 1px solid black; */
+  position: absolute; 
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  margin: 5px 0; 
+  font-weight: 400;
+  color: white;
+}
+
+.vien-5 {
+  /* border: 1px solid black; */
+  padding: 10px;
+  padding-inline: 20px;
+  position: relative;
+  display: inline-block;
+  padding-top: 6px;
+  padding-inline: 30px;
+  background-color: #8A6C1C;
+  border-radius: 5px;
+  margin-left: 1px;
+}
+.vien-5 .login {
+  /* border: 1px solid rgb(228, 73, 73); */
+  transform: translateY(-40%);
+}
+.vien-5 .login-1 {
+  width: 60px;
+  font-size: 12px;
+  /* border: 1px solid black; */
+  position: absolute; 
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-30%);
+  margin: 5px 0; 
+  font-weight: 400;
+  color: white;
+}
+
+.vien-6 {
+  font-weight: 500;
+  color: white;
+}
+.vien-6:hover{
+  color: rgb(96, 90, 90);
+}
+
+.sp-hot-1 {
+  border: 1px solid rgb(255, 183, 0);
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+.sp-hot-1 img {
+  display: inline;
+}
+.sp-hot-1-vb {
+  position: absolute;
+  color: rgb(220, 135, 8);
+  /* border: 1px solid black; */
+  display: inline;
+}
+/*End-header */
+
+/* Nav */
+.nav {
+  border: 1px solid rgb(189, 138, 138);
+  background-color: #e7c06e;
+} 
+.nav div {
+  display: inline;
+  /* margin: 5px; */
+  /* border: 1px solid rgb(216, 18, 18); */
+  padding-top: 15px;
+}
+
+.menu-1 {
+  margin-left: 100px;
+  margin-right: 110px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px; /* Độ dày của border */
+  background-color: rgb(249, 249, 246); /* Màu sắc của border */
+  transition: width 0.5s ease; /* Hiệu ứng transition */
+}
+
+.menu-1:hover::after {
+  width: 100%; /* Khi hover, border bottom sẽ hiển thị full width */
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 57%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  width: 200px;
+}
+.menu-1:hover .sub-menu {
+  display: block;
+}
+
+.menu-vb1 {
+  width: 100px;
+  /* border: 1px solid blue; */
+  padding-bottom: 10px;
+  color: #ffffff;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  transform: translateY(-20%);
+} 
+
+
+/*End - Nav */
+
+/* Content */
+.content{
+  padding: 10px;
+}
+
+.khoi1{
+  border: 1px solid #faee06;
+  height: 302px;
+  border-radius: 3px;
+}
+.anh-hot {
+  float: left;
+}
+.sp-hot{
+  float: right;
+  width: 420px;
+  height: 300px;
+  border: 1px solid rgb(231, 201, 201);
+  border-radius: 3px;
+}
+.sp-hot .hot-vien-1{
+  border: 1px solid rgb(255, 197, 5);
+  height: 36px;
+  background-color: #f4b572;
+  border-radius: 3px;
+}
+.sp-hot-1 {
+  border: 1px solid rgb(255, 200, 0);
+  width: 400px;
+  margin: 5px;
+  background-color: #eadcbc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.sp-hot-vb {
+  /* border: 1px solid black; */
+  width: 200px;
+  margin-left: 130px;
+  margin-top: 1px;
+  color: rgb(245, 14, 14);
+}
+
+.price-1 {
+    border: 1px solid rgb(239, 0, 0);
+    width: 150px;
+    margin-left: 180px;
+    margin-top: 15px;
+    color: rgb(95, 85, 85);
+    display: inline;
+    position: absolute;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.tieu-de-dt {
+  height: 50px;
+  border: 1px solid rgb(243, 247, 8);
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: rgb(209, 210, 164);
+}
+.tieu-de-dt p {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(247, 56, 56);
+}
+
+.dien_thoai{
+  margin-top: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(233, 214, 2);
+}
+
+.vien-dt-1 {
+  border: 1px solid rgb(255, 247, 4);
+  margin: 10px;
+  width: 180px;
+  height: 360px;
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  display: inline-block;
+}
+.vien-dt-1 img {
+  margin: 5px;
+}
+.vien-dt-1 .dien_thoai_vb-1{
+  /* border: 1px solid black; */
+  /* width: 170px; */
+  /* margin-left: 5px; */
+  text-align: center;
+  font-weight: 350;
+}
+.dien_thoai_vb {
+  font-weight: 600;
+  font-size: 13px;
+  color: red;
+  text-align: center;
+}
+.vien-dt-1 button {
+  width: 140px;
+  height: 30px;
+  margin-left: 20px;
+  background-color: #f68402;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+.vien-dt-1 button:hover {
+  background-color: rgb(135, 224, 142);
+}
+
+.tieu-de-fk {
+  /* border: 1px solid rgb(6, 6, 6); */
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: rgb(246, 247, 235);
+}
+.tieu-de-fk .img {
+  display: inline;
+}
+.tieu-de-fk .img-1{
+  float: right;
+}
+.tieu-de-fk .img-2{
+  float: left;
+}
+
+.vien-fk-1 {
+  border: 1px solid rgb(255, 247, 4);
+  margin: 10px;
+  width: 180px;
+  height: 280px;
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  display: inline-block;
+}
+.vien-fk-1 img {
+  margin: 5px;
+  margin-left: 35px;
+}
+.vien-fk-1 p {
+  /* border: 1px solid black; */
+  /* width: 170px; */
+  /* margin-left: 5px; */
+  text-align: center;
+}
+.vien-fk-1 button {
+  width: 140px;
+  height: 30px;
+  margin-left: 20px;
+  background-color: #f68402;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+.vien-fk-1 button:hover {
+  background-color: rgb(135, 224, 142);
+}
+.phu-kien {
+  border: 1px solid rgb(218, 255, 11);
+  margin-top: 10px;
+}
+/* footer */
+.footer {
+  padding: 20px;
+  border: 1px solid rgba(24, 24, 20, 0.839);
+  background-color: #7e7a72;
+}
+
+
+.footer-1 {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Các div con sẽ được căn giữa theo chiều ngang */
+}
+
+.footer-1 div {
+  flex: 1; /* Các div con sẽ có độ rộng bằng nhau */
+  padding: 10px; /* Thêm padding để tạo khoảng cách giữa các div con */
+  border: 1px solid #ccc; /* Thêm viền cho các div con */
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.vien-ft-3-1{
+  position: relative;
+  margin-bottom: 4px;
+}
+.vien-ft-3-1 a{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+
+/* Thanh toán */
+.content-1 div .title {
+  border-bottom: 1px solid rgb(245, 158, 136);
+  text-align: center;
+  height: 110px;
+}
+.content-1 div .title img,h2 {
+  display: inline;
+  height: 60px;
+}
+.content-1 div .title img {
+  transform: translateY(+35%);
+}
+
+.content-1 .product {
+  border: 2px dashed rgb(151, 192, 2);
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 100px;
+  height: 80px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+.product img {
+  transform: translateY(+10px);
+  margin-right: 100px;
+}
+.product-content {
+  /* transform: translateX(50px); */
+  transform: translateY(-60px);
+  margin-left: 80px;
+}
+.product-content .stok {
+  float: right;
+  margin-right: 300px;
+  transform: translateY(-60px);
+}
+.product-content .stok input {
+  width: 25px;
+  text-align: center;
+  height: 30px;
+  border: none;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(181, 177, 177);
+}
+.product-content button {
+  border: none;
+  background-color: rgb(181, 177, 177);
+  width: 30px;
+  height: 31px;
+  color: white;
+  font-size: 20px;
+}
+.product-content button:hover {
+  background-color: rgb(140, 208, 142);
+  transition-delay: 0.2s;
+}
+
+.content-1 div div input {
+  width: 500px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(223, 169, 20);
+}
+.form-kh {
+  margin-left: 60px;
+  margin: 60px;
+}
+.form-kh div {
+  padding: 10px;
+}
+.form-kh div .button-price {
+  height: 30px;
+  margin-right: 200px;
+  border: none;
+  background-color: white;
+  color: rgb(227, 113, 6);
+  font-size: 20px;
+}
+.form-kh div .button-submit {
+  width: 100px;
+  height: 30px;
+  margin-right: 200px;
+  border: none;
+  background-color: rgb(75, 180, 26);
+  border-radius: 5px;
+  color: white;
+}
+.form-kh div .button-submit:hover {
+  background-color: rgb(138, 208, 106);
+}

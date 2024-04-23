@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script src="script.js"></script>
+  <div class="container">
+    <div class="product">
+      <div class="boxsp">
+        <img src="BanhNgot.jpg" alt="Hình ảnh 1">
+        <div id="product1">
+        </div>
+        <button class="xem-them1" onclick="xemthem1()">Xem thêm</button>
+        <button class="them-vao-gio-hang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+      </div>
+      <div class="boxsp">
+        <img src="BanhNgot1.jpg" alt="Hình ảnh 1">
+        <div id="product2">
+        </div>
+        <button class="xem-them2" onclick="xemthem2()">Xem thêm</button>
+        <button class="them-vao-gio-hang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+      </div>
+      <div class="boxsp">
+        <img src="BanhNgot2.jpg" alt="Hình ảnh 1">
+        <div id="product3">
+        </div>
+        <button class="xem-them3" onclick="xemthem3()">Xem thêm</button>
+        <button class="them-vao-gio-hang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <div id="tableCart" style="display: none;">
+      <h1>Giỏ hàng</h1>
+        <div class="cartbox"><i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i><span id="countsp">0</span></div>
+        <div id="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+              </tr>
+            </thead>
+            <tbody id="mycart">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

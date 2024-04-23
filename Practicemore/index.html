@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practice1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/6_ec75840e5473473eb9d106dd31e35ce2_grande.jpg" alt="">
+                    <div id="cart1" class="card-body">
+                    </div>
+                    <button id="xemthem1" onclick="more1()" class="btn btn-info col-lg-4 mb-3">Xem thêm</button>
+                    <button onclick="addtocart(this)" class="btn btn-primary col-lg-7 mb-3">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/mix 3.jpg" alt="">
+                    <div id="cart2" class="card-body">
+                    </div>
+                    <button id="xemthem2" onclick="more2()" class="btn btn-info col-lg-4 mb-3">Xem thêm</button>
+                    <button onclick="addtocart(this)" class="btn btn-primary col-lg-7 mb-3">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/Banhmoi3.jpg" alt="">
+                    <div id="cart3" class="card-body">
+                    </div>
+                    <button id="xemthem3" onclick="more3()" class="btn btn-info col-lg-4 mb-3">Xem thêm</button>
+                    <button onclick="addtocart(this)" class="btn btn-primary col-lg-7 mb-3">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/BLTM8.jpg" alt="">
+                    <div id="cart4" class="card-body">
+                    </div>
+                    <button id="xemthem4" onclick="more4()" class="btn btn-info col-lg-4 mb-3">Xem thêm</button>
+                    <button onclick="addtocart(this)" class="btn btn-primary col-lg-7 mb-3">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tableCart" style="display: none;" class="container">
+        <h1 class="title">Giỏ hàng</h1>
+        <div class="cart-icon">
+            <img src="img/shopping-bag.png" alt="">
+            <span id="countsp" >0</span>
+        </div>
+        <table class="mt-2">
+            <thead>
+                <tr>
+                    <th class="col-sm-1 col-md-1 col-lg-1"></th>
+                    <th class="col-sm-3 col-md-3 col-lg-3">Hình ảnh</th>
+                    <th class="col-sm-3 col-md-3 col-lg-3">Tên sản phẩm</th>
+                    <th class="col-sm-2 col-md-2 col-lg-2">Số lượng</th>
+                    <th class="col-sm-2 col-md-2 col-lg-2">Giá</th>
+                    <th class="col-sm-1 col-md-1 col-lg-1"></th>
+                </tr>
+            </thead>
+            <tbody id="mycart">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

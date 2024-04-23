@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f1ececee;
+    border: 1px solid #f1ececee;
+    border-radius: 1em;
+}
+.product{
+    display: flex;
+    flex-direction: row;
+}
+.boxsp {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 10px 10px 20px 10px;
+}
+
+.boxsp img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+#GiaCa1, #GiaCa2, #GiaCa3{
+    display: flex;
+}
+#product1, #product2, #product3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.xem-them1, .xem-them2, .xem-them3 {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.them-vao-gio-hang {
+    background-color: #000;
+    color: #fff;
+}
+button:hover {
+    background-color: #ddd;
+}
+#tableCart{
+    display: flex;
+    flex-direction: column;
+}
+#table{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+}
+.img{
+    width:200px;
+    margin-right: 10px;
+}
+.img img{
+    max-width: 100%;
+    padding: 0 20px;
+}
+table tr th{
+    padding: 10px;
+
+}
+table tr td{
+    padding: 10px;
+    text-align: center;
+}
+.total{
+    margin: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+span{
+    font-size: 20px;
+    font-weight: bold;
+}
+#countsp{
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    top: 10px;
+    height: 25px;
+    border: 1px solid rgb(56, 56, 55);
+    border-radius: 1em;
+    text-align: center;
+    background-color: yellow;
+}

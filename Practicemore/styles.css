@@ -1,0 +1,20 @@
+button{
+    margin: 0 auto;
+}
+.cart-icon img{
+    width: 30px;
+}
+
+table tr th{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+table tr td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+table tr img{
+    width: 200px;
+}

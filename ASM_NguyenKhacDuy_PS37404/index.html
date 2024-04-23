@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm sinh viên</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Tính điểm sinh viên</h1>
+        <form id="form-tinh-diem" class="row g-3">
+            <div class="col-md-6">
+                <label for="ho-ten" class="form-label">Họ tên:</label>
+                <input type="text" id="ho-ten" name="ho-ten" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="diem-midterm" class="form-label">Điểm giữa kì:</label>
+                <input type="number" id="diem-midterm" name="diem-midterm" class="form-control" min="0" max="10" required>
+            </div>
+            <div class="col-md-6">
+                <label for="diem-final" class="form-label">Điểm cuối kì:</label>
+                <input type="number" id="diem-final" name="diem-final" class="form-control" min="0" max="10" required>
+            </div>
+            <div class="col-md-6">
+                <label for="diem-bonus" class="form-label">Điểm rèn luyện:</label>
+                <input type="number" id="diem-bonus" name="diem-bonus" class="form-control" min="0" max="10">
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary" onclick="tinhdiem()">Tính điểm</button>
+            </div>
+            <div class="col-md-6">
+                <button type="submit" onclick="cancel()" class="btn btn-primary">Hủy</button>
+            </div>
+            <div class="col-md-2">
+                 <button type="reset" onclick="book()" class="btn btn-primary">Book</button>
+            </div>
+        </form>
+        <div id="ket-qua" class="card mt-3" style="display: none;"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

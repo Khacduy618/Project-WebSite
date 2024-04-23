@@ -1,0 +1,45 @@
+body {
+  background-image: url(../../uploads/img/30066_trang.jpg); 
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: roboto;
+}
+.form-login div label {
+  color: white;
+}
+.form-login {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 600px;
+  margin-left: 300px;
+}
+.form-login div {
+  /* border: 1px solid black; */
+  width: 520px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.form-login div input {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.form-login .button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(91, 193, 101);
+  margin-left: 250px;
+  margin-bottom: 20px;
+}
+
+/*Đăng nhập*/
+#loginForm {
+  border: 1px solid black;
+}

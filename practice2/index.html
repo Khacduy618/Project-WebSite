@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Đăng ký nhập học</title>
+</head>
+
+<body>
+    <div class="container mt-5 w-50 bg-white">
+        <h1 class="text-center p-3">Đăng ký nhập học</h1>
+        <form action="" class="was-validated p-4 mt-2">
+            <div class="mb-3 mt-3 ">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" name="name" id="name" class="form-control" value="" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input type="text" name="phone" id="phone" class="form-control" required>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <h6 class="form-label">Cách thức xét tuyển: </h6>
+                <div class="xettuyen ">
+                    <label for="hocba">Xét học bạ</label>
+                    <input type="radio" name="xettuyen" id="hocba" required>
+                </div>
+                <div class="dangky mt-1">
+                    <label for="dangky">Đăng ký dự thi</label>
+                    <input type="radio" name="xettuyen" id="dangky" required>
+                </div>
+            </div>
+            <div class="mb-3 mt-3 ">
+                <label for="tomTat" class="form-label">Tóm tắt</label>
+                <input type="text" name="tomTat" id="tomTat" class="form-control" value="">
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="button">
+                <input type="submit" class="btn btn-pro" name="capnhat" value="Cập nhật tin!">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

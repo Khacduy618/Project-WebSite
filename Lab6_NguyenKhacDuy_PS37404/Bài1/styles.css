@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body {
+    font-family: Arial;
+    color: black;
+    background-color: white;
+    width: 500px;
+    margin: 50px auto;
+  }
+h1, p, button{
+    margin: 10px;
+}
+h1{
+    font-size: larger;
+}
